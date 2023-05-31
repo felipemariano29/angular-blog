@@ -9,6 +9,7 @@ import { CardInterface } from 'src/app/interfaces/card.interface';
 export class SmallCardComponent {
   @Input()
   smallCard: CardInterface = {
+    id: 0,
     image: '',
     title: '',
     description: '',

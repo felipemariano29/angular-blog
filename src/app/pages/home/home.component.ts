@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CardInterface } from 'src/app/interfaces/card.interface';
+import { CardsMock } from 'src/app/mock/cards.mock';
 
 @Component({
   selector: 'app-home',
@@ -7,31 +8,7 @@ import { CardInterface } from 'src/app/interfaces/card.interface';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-  public readonly bigCard: CardInterface = {
-    image: 'https://placehold.co/600x400',
-    title: 'Lorem, ipsum dolor.',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore error doloremque ex numquam, in quas incidunt similique praesentium exercitationem eum.',
-  };
+  public readonly bigCard: CardInterface = CardsMock[0];
 
-  public readonly smallCards: CardInterface[] = [
-    {
-      image: 'https://placehold.co/600x400',
-      title: 'Lorem, ipsum 1.',
-      description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore error doloremque ex numquam, in quas incidunt similique praesentium exercitationem eum.',
-    },
-    {
-      image: 'https://placehold.co/600x400',
-      title: 'Lorem, ipsum 2.',
-      description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore error doloremque ex numquam, in quas incidunt similique praesentium exercitationem eum.',
-    },
-    {
-      image: 'https://placehold.co/600x400',
-      title: 'Lorem, ipsum 3.',
-      description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore error doloremque ex numquam, in quas incidunt similique praesentium exercitationem eum.',
-    },
-  ];
+  public readonly smallCards: CardInterface[] = CardsMock.slice(1, 4);
 }
