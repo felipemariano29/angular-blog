@@ -1,0 +1,18 @@
+.menu__title__container {
+  margin-top: 10px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.menu__title__container h1 {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-size: 120px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.menu__title__container hr {
+  margin: 20px 0 5px;
+}

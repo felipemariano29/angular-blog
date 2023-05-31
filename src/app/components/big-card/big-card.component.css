@@ -1,0 +1,36 @@
+.big_card__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 450px;
+  width: 400px;
+  padding: 22px;
+  margin: 30px;
+}
+
+.big_card__container:hover {
+  cursor: pointer;
+}
+
+.big_card__img {
+  min-height: 240px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.big_card__img img {
+  height: 240px;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.big_card__title h2 {
+  margin-top: 14px;
+  font-size: 20px;
+}
+
+.big_card__description p {
+  margin-top: 10px;
+  color: gray;
+}
