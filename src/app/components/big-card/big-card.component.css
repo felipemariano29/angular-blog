@@ -33,4 +33,10 @@
 .big_card__description p {
   margin-top: 10px;
   color: gray;
+  overflow: hidden;
+  text-overflow: clip;
+  height: 65px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
